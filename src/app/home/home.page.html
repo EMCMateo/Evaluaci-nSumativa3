@@ -1,0 +1,14 @@
+<div class="xd">
+<app-nav-bar title="Evaluación Sumativa"> </app-nav-bar>
+
+<ion-content [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="4" size-md="6" size-sm="6" size-xs="12" *ngFor="let not of noticia"> <app-news-card
+          [tituloN]=not.tituloN [imagen]=not.imagen  [description]=not.description> </app-news-card></ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>
+</div>
